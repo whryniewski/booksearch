@@ -1,9 +1,9 @@
 # BookSearch
 
 This web application allows the user to search for cheapest books.
-It's based on a template project: https://github.com/jonashackt/spring-boot-vuejs
+It's based on a template project: https://github.com/jonashackt/spring-boot-vuejs.
 
-[screenshot]: 
+[screenshot]: https://raw.githubusercontent.com/whryniewski/booksearch/master/screenshot.png
 ![Screenshot of BookSearch][screenshot]
 
 # Compile and Run
@@ -19,6 +19,7 @@ mvn --project backend spring-boot:run
 
 # Project details
 
-Application works by communicating with certain API-s that 
+Application works by communicating with certain API-s to find ISBN of a book and then uses this data to browse through
+some Internet bookstores to find offers with the lowest price.
 
 
