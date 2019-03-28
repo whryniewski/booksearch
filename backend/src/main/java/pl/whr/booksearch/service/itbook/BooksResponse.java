@@ -22,9 +22,8 @@ public class BooksResponse {
         this.error = error;
     }
 
-
-
-    public BooksResponse() { }
+    public BooksResponse() {
+    }
 
     public BooksResponse(String url, String price, String title, String error) {
         this.url = url;

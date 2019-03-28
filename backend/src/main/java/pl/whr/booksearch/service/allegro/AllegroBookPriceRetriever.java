@@ -5,8 +5,8 @@ import pl.whr.booksearch.model.Book;
 import pl.whr.booksearch.model.Offer;
 import pl.whr.booksearch.model.SearchMethods;
 import pl.whr.booksearch.service.ShopOffersRetriever;
-import io.swagger.model.ListingOffer;
-import io.swagger.model.ListingResponse;
+import pl.whr.booksearch.service.allegro.model.ListingOffer;
+import pl.whr.booksearch.service.allegro.model.ListingResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +22,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class AllegroBookPriceRetriever implements ShopOffersRetriever {
-    /* https://dzone.com/articles/build-a-spring-boot-app-with-secure-server-to-serv */
-
     private static final Logger LOG = LoggerFactory.getLogger(AllegroBookPriceRetriever.class);
 
     @Autowired

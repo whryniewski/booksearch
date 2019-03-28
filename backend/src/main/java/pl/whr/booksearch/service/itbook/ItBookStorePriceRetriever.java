@@ -28,8 +28,6 @@ public class ItBookStorePriceRetriever implements ShopOffersRetriever {
 
     @Override
     public List<Offer> findOffers(Book book) {
-        // TODO: what if there's no isbn?
-
         LOG.info("Looking for ISBN: " + book.getIsbn());
         String queryString = makeQueryString(book);
 

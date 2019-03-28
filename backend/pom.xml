@@ -63,7 +63,7 @@
 			<artifactId>mockito-core</artifactId>
 			<version>2.21.0</version>
 		</dependency>
-		
+
 		<!-- Testing -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

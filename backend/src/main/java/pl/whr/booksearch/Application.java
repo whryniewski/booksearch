@@ -47,17 +47,4 @@ public class Application {
 		return new RestTemplate();
 	}
 
-	//@Bean
-	//@Qualifier("nothing")
-	//protected ItBookStorePriceRetriever itBookStorePriceRetriever() {
-	//	return new ItBookStorePriceRetriever();
-	//}
-
-	@Bean
-	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
-		return args -> {
-		//List<Offer> offers = itBookStorePriceRetriever().findOffers(new Book("pan tadeusz", "9781617294136"));
-		//	System.out.println(offers);
-		};
-	}
 }

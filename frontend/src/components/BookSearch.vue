@@ -24,7 +24,7 @@
     export default {
         name: 'user',
 
-        data () {
+        data() {
             return {
                 bookTitle: '',
                 booksRetrieved: [],
@@ -32,7 +32,7 @@
             }
         },
         methods: {
-            searchForBooks () {
+            searchForBooks() {
                 var params = new URLSearchParams()
                 this.waiting = true
                 params.append('title', this.bookTitle)

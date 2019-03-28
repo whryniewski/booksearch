@@ -65,15 +65,4 @@ public class GoogleBooksIsbnSearcher implements BookRetriever {
                     identifier.getType().contains("ISBN")).map(Volume.VolumeInfo.IndustryIdentifiers::getIdentifier);
         }
     }
-
-    // TODO: replace with integration test
-    public static void main(String args[]) {
-        GoogleBooksIsbnSearcher client = new GoogleBooksIsbnSearcher();
-        try {
-            System.out.println(client.findByTitle("costam"));
-            //System.out.println(client.search("fdsafdsasfdas"));
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-    }
 }
