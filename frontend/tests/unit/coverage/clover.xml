@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1553778382300" clover="3.2.0">
+  <project timestamp="1553778382300" name="All files">
+    <metrics statements="11" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0" elements="12" coveredelements="4" complexity="0" loc="11" ncloc="11" packages="2" files="3" classes="3">
+      <package name="src">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="App.vue" path="/Users/whr/Projects/ihs/app2/spring-boot-vuejs/frontend/src/App.vue">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="15" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.components">
+        <metrics statements="10" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <file name="BookSearch.vue" path="/Users/whr/Projects/ihs/app2/spring-boot-vuejs/frontend/src/components/BookSearch.vue">
+          <metrics statements="9" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="28" count="1" type="stmt"/>
+          <line num="36" count="0" type="stmt"/>
+          <line num="37" count="0" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="41" count="0" type="stmt"/>
+          <line num="42" count="0" type="stmt"/>
+          <line num="43" count="0" type="stmt"/>
+        </file>
+        <file name="http-common.js" path="/Users/whr/Projects/ihs/app2/spring-boot-vuejs/frontend/src/components/http-common.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="3" count="1" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
