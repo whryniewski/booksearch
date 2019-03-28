@@ -1,5 +1,5 @@
 <template>
-    <div class="user">
+    <div>
         <h1>Find a book!</h1>
 
         <input type="text" v-model="bookTitle" placeholder="book title">
