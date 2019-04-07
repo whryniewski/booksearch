@@ -25,6 +25,7 @@ import java.util.stream.Stream;
 public class GoogleBooksIsbnSearcher implements BookRetriever {
     private static final Logger LOG = LoggerFactory.getLogger(GoogleBooksIsbnSearcher.class);
 
+
     private final String APPNAME = "BOOKEO";
     private final String apiKey = "AIzaSyBqoq_bGMnSpQ4ih1DrcqnB_o1GQJqyw7s";
 
@@ -44,11 +45,11 @@ public class GoogleBooksIsbnSearcher implements BookRetriever {
 
     private Set<String> findIsbns(String title) throws GeneralSecurityException, IOException {
         final JacksonFactory jsonFactory = JacksonFactory.getDefaultInstance();
-        final Books books = new Books.Builder(GoogleNetHttpTransport.newTrustedTransport(), jsonFactory, null)
+        final Books booksClient = new Books.Builder(GoogleNetHttpTransport.newTrustedTransport(), jsonFactory, null)
                 .setApplicationName(APPNAME)
                 .setGoogleClientRequestInitializer(new BooksRequestInitializer(apiKey))
                 .build();
-        Volumes volumes = books.volumes().list(title).execute();
+        Volumes volumes = booksClient.volumes().list(title).execute();
 
         return volumes.getItems().stream()
                 .map(this::getIsbnsFromVolume)

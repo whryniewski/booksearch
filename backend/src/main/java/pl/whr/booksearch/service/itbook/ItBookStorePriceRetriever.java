@@ -23,7 +23,6 @@ public class ItBookStorePriceRetriever implements ShopOffersRetriever {
     final String API = "https://api.itbook.store/1.0";
 
     @Autowired
-    @Qualifier("generic")
     RestTemplate restTemplate;
 
     @Override

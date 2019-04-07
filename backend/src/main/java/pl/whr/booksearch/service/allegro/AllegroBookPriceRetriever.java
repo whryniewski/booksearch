@@ -1,6 +1,7 @@
 package pl.whr.booksearch.service.allegro;
 
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import pl.whr.booksearch.model.Book;
 import pl.whr.booksearch.model.Offer;
 import pl.whr.booksearch.model.SearchMethods;
@@ -25,6 +26,7 @@ public class AllegroBookPriceRetriever implements ShopOffersRetriever {
     private static final Logger LOG = LoggerFactory.getLogger(AllegroBookPriceRetriever.class);
 
     @Autowired
+    @Qualifier("allegro")
     RestTemplate restTemplate;
 
     final String ALLEGRO_API_URL = "https://api.allegro.pl";

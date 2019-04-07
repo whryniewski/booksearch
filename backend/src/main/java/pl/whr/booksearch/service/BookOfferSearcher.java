@@ -37,7 +37,7 @@ public class BookOfferSearcher {
         List<Offer> offers = books.stream().flatMap(book ->
                 findAllShopRetrievers().stream().flatMap(retriever ->
                         retriever.findOffers(book).stream())).distinct().collect(Collectors.toList());
-
+        
         offers.sort(offerComparator);
         return offers;
     }

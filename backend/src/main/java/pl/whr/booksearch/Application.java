@@ -23,28 +23,9 @@ import java.util.List;
 		DataSourceAutoConfiguration.class}
 )
 public class Application {
-
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@Bean
-	@ConfigurationProperties("allegro")
-	protected ClientCredentialsResourceDetails oAuthDetails() {
-		return new ClientCredentialsResourceDetails();
-	}
-
-	@Bean
-	protected RestTemplate restTemplate() {
-		RestTemplate rt = new OAuth2RestTemplate(oAuthDetails());
-		rt.setInterceptors(List.of(new AllegroRequestInterceptor()));
-		return rt;
-	}
-
-	@Bean
-	@Qualifier("generic")
-	protected RestTemplate genericRestTemplate() {
-		return new RestTemplate();
-	}
 
 }
